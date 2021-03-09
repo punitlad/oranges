@@ -1,25 +1,23 @@
 <template>
-  <Orange />
+  <Orange v-for="(fruit, index) in fruits" :key="index" :fruit="fruit" />
 </template>
 
 <script>
 import Orange from './components/Orange.vue'
+import data from "./data.json"
 
 export default {
-  name: 'App',
   components: {
     Orange
-  }
+  }, 
+  data() {
+    return {
+      fruits: data.citrus_fruits,
+    }
+  },
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 100px;
-}
+
 </style>

@@ -1,0 +1,15 @@
+{
+    "citrus_fruits": [
+      {
+        "name": "Navel Oranges",
+        "details": "something something about navel oranges",
+        "image": "./../assets/orange-whole.png"
+      },
+      {
+        "name": "Navel Oranges",
+        "details": "something something about navel oranges",
+        "image": "./../assets/orange-whole.png"
+      }
+    ]
+  }
+  

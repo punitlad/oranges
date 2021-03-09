@@ -1,17 +1,20 @@
 <template>
   <div class="orange">
-    <h1>Orange</h1>
-    <img alt="Orange" src="./../assets/orange-whole.png" width="500" height="500">
+    <h1>{{ fruit.name }}</h1>
+    <img :src="fruit.image" width="500" height="500">
+    <p>{{ fruit.details }}</p>
   </div>
 </template>
 
+
 <script>
 export default {
-  name: 'Orange'
+  name: 'Orange',
+  props: {
+    fruit: {
+      type: Object,
+      required: true
+    },
+  }
 }
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-
-</style>
